@@ -102,8 +102,9 @@ http://localhost:8050
 
 ## 🌐 Ejecución en Binder
 
-https://hub.gesis.mybinder.org/user/pabdus-proyecto-encia-de-datos--3bpmi3ih/lab
-
+[https://hub.gesis.mybinder.org/user/pabdus-proyecto-encia-de-datos--3bpmi3ih/lab
+](https://gesis.mybinder.org/v2/gh/pabdus/Proyecto-Programacion-para-la-ciencia-de-datos-/master
+)
 Ejecutar:
 
 ```bash
