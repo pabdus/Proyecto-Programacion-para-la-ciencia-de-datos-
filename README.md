@@ -2,67 +2,74 @@
 
 ## 📌 Descripción
 
-Este proyecto se centró en el análisis de la calidad del vino usando variables fisicoquímicas del dataset **WineQT**.
-El objetivo fue cumplir con los lineamientos de la actividad: aplicar métodos de incertidumbre, contraste de hipótesis y modelos estadísticos dentro de un dashboard interactivo.
+Este proyecto se desarrolló con el objetivo de aplicar métodos estadísticos computacionales para analizar la calidad del vino a partir de variables fisicoquímicas del dataset **WineQT**.
+
+El trabajo se realizó siguiendo los lineamientos de la actividad, enfocándose en:
+
+* métodos de incertidumbre
+* contraste de hipótesis
+* modelado estadístico
 
 ---
 
-## 🎯 Enfoque
+## 🎯 Enfoque del desarrollo
 
-El desarrollo se realizó en función directa de los requisitos del curso:
+Se trabajó en función de los requerimientos del curso:
 
 * Análisis exploratorio de datos (EDA)
-* Contraste de hipótesis (prueba t de Welch)
-* Modelos:
+* Contraste de hipótesis:
+
+  * Prueba de Levene (igualdad de varianzas)
+  * Prueba t de Welch (diferencia de medias)
+* Modelado:
 
   * Regresión lineal
   * Regresión logística
-* Visualización en dashboard interactivo
+* Dashboard interactivo en Dash
 
-Todo el proceso se orientó a **explicar el problema y no solo predecirlo**.
+Se priorizó la interpretabilidad sobre la complejidad.
 
 ---
 
 ## ⚙️ Variables utilizadas
 
-Se trabajó únicamente con:
-
 * `alcohol`
 * `volatile acidity`
 * `sulphates`
 
-La selección se hizo por su relación con la variable objetivo (`quality`), pero también porque la actividad requería un enfoque controlado y explicable, evitando complejidad innecesaria.
+La selección responde tanto a su relación con la calidad como a los lineamientos de la actividad, que requerían un modelo controlado y explicable.
 
 ---
 
-## 📊 Resultados
+## 📊 Resultados principales
 
 * Alcohol → relación positiva con la calidad
 * Acidez volátil → relación negativa significativa
-* Diferencias entre grupos → estadísticamente significativas
+* Prueba de Levene → evidencia de varianzas no homogéneas
+* Prueba t de Welch → diferencias significativas entre grupos
 * Regresión lineal → capacidad explicativa moderada
 * Regresión logística → clasificación aceptable
-
-Los resultados son consistentes con el carácter parcialmente subjetivo de la calidad del vino.
 
 ---
 
 ## ⚠️ Limitaciones
 
-* Uso de pocas variables (en parte por lineamientos de la actividad)
+* Uso de pocas variables (acorde a la actividad)
 * No se aplicó escalamiento
 * No se utilizó validación cruzada
 * Variable objetivo subjetiva
 
 ---
 
-## 🔁 Recomendaciones
+## 🔁 Evaluación y mejoras
 
-* Incluir más variables
-* Aplicar feature engineering
-* Usar escalamiento (`StandardScaler`)
-* Implementar validación cruzada
-* Evaluar modelos más complejos
+El modelo cumple con los objetivos del análisis, pero puede mejorarse mediante:
+
+* inclusión de más variables
+* feature engineering
+* validación cruzada
+* ajuste de hiperparámetros
+* regularización
 
 ---
 
@@ -74,7 +81,7 @@ Desarrollado con:
 * Plotly
 * Pandas
 
-Incluye análisis, modelos y un predictor interactivo en tiempo real.
+Incluye análisis, contraste de hipótesis, modelos y predicción interactiva.
 
 ---
 
@@ -95,26 +102,23 @@ http://localhost:8050
 
 ## 🌐 Ejecución en Binder
 
-Puedes ejecutarlo directamente aquí:
+https://hub.gesis.mybinder.org/user/pabdus-proyecto-encia-de-datos--3bpmi3ih/lab
 
-[https://hub.gesis.mybinder.org/user/pabdus-proyecto-encia-de-datos--3bpmi3ih/lab](https://hub.gesis.mybinder.org/user/pabdus-proyecto-encia-de-datos--705hqnsh/lab)
-
-Si no abre automáticamente el dashboard:
+Ejecutar:
 
 ```bash
 python app.py
 ```
 
-Luego ir a:
+Ir a:
 
 ```
-http://localhost:8050
+/proxy/8050/
 ```
 
 ---
 
 ## 🧠 Conclusión
 
-El proyecto cumple con los requerimientos de la actividad y demuestra cómo aplicar métodos estadísticos para analizar un problema real.
-Más que buscar máxima precisión, se priorizó la interpretación y la coherencia con los conceptos trabajados en el curso.
+El proyecto cumple con los requerimientos de la actividad y aplica correctamente técnicas de contraste de hipótesis y modelado estadístico, priorizando la comprensión del problema sobre la complejidad del modelo.
 
