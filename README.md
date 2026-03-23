@@ -97,7 +97,7 @@ http://localhost:8050
 
 Puedes ejecutarlo directamente aquí:
 
-https://hub.gesis.mybinder.org/user/pabdus-proyecto-encia-de-datos--3bpmi3ih/lab
+[https://hub.gesis.mybinder.org/user/pabdus-proyecto-encia-de-datos--3bpmi3ih/lab](https://hub.gesis.mybinder.org/user/pabdus-proyecto-encia-de-datos--705hqnsh/lab)
 
 Si no abre automáticamente el dashboard:
 
